@@ -12,6 +12,11 @@
 		0518DC4520D1D63700864631 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0518DC4320D1D63700864631 /* Main.storyboard */; };
 		0518DC4720D1D63900864631 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0518DC4620D1D63900864631 /* Assets.xcassets */; };
 		0518DC4A20D1D63900864631 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0518DC4820D1D63900864631 /* LaunchScreen.storyboard */; };
+		05881AB120D1E6620008AEC6 /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05881AB020D1E6620008AEC6 /* Lottie.framework */; };
+		05881AB320D1E6770008AEC6 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05881AB220D1E6770008AEC6 /* Mapbox.framework */; };
+		05881AB520D3379B0008AEC6 /* wow.json in Resources */ = {isa = PBXBuildFile; fileRef = 05881AB420D3379B0008AEC6 /* wow.json */; };
+		05881AB720D342260008AEC6 /* confetti.json in Resources */ = {isa = PBXBuildFile; fileRef = 05881AB620D342260008AEC6 /* confetti.json */; };
+		05881AB920D343220008AEC6 /* success.json in Resources */ = {isa = PBXBuildFile; fileRef = 05881AB820D343210008AEC6 /* success.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		0518DC4620D1D63900864631 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0518DC4920D1D63900864631 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0518DC4B20D1D63900864631 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05881AB020D1E6620008AEC6 /* Lottie.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lottie.framework; path = Carthage/Build/iOS/Lottie.framework; sourceTree = "<group>"; };
+		05881AB220D1E6770008AEC6 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapbox.framework; path = Carthage/Build/iOS/Mapbox.framework; sourceTree = "<group>"; };
+		05881AB420D3379B0008AEC6 /* wow.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = wow.json; path = ../../../Downloads/wow.json; sourceTree = "<group>"; };
+		05881AB620D342260008AEC6 /* confetti.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = confetti.json; path = ../../../Downloads/confetti.json; sourceTree = "<group>"; };
+		05881AB820D343210008AEC6 /* success.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = success.json; path = ../../../Downloads/success.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05881AB320D1E6770008AEC6 /* Mapbox.framework in Frameworks */,
+				05881AB120D1E6620008AEC6 /* Lottie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +52,7 @@
 			children = (
 				0518DC3E20D1D63700864631 /* LottieBox */,
 				0518DC3D20D1D63700864631 /* Products */,
+				05881AAF20D1E6620008AEC6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +67,9 @@
 		0518DC3E20D1D63700864631 /* LottieBox */ = {
 			isa = PBXGroup;
 			children = (
+				05881AB820D343210008AEC6 /* success.json */,
+				05881AB620D342260008AEC6 /* confetti.json */,
+				05881AB420D3379B0008AEC6 /* wow.json */,
 				0518DC3F20D1D63700864631 /* AppDelegate.swift */,
 				0518DC4120D1D63700864631 /* ViewController.swift */,
 				0518DC4320D1D63700864631 /* Main.storyboard */,
@@ -62,6 +78,15 @@
 				0518DC4B20D1D63900864631 /* Info.plist */,
 			);
 			path = LottieBox;
+			sourceTree = "<group>";
+		};
+		05881AAF20D1E6620008AEC6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05881AB220D1E6770008AEC6 /* Mapbox.framework */,
+				05881AB020D1E6620008AEC6 /* Lottie.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +99,7 @@
 				0518DC3820D1D63700864631 /* Sources */,
 				0518DC3920D1D63700864631 /* Frameworks */,
 				0518DC3A20D1D63700864631 /* Resources */,
+				0518DC5120D1D80000864631 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -122,13 +148,34 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05881AB720D342260008AEC6 /* confetti.json in Resources */,
 				0518DC4A20D1D63900864631 /* LaunchScreen.storyboard in Resources */,
+				05881AB520D3379B0008AEC6 /* wow.json in Resources */,
 				0518DC4720D1D63900864631 /* Assets.xcassets in Resources */,
 				0518DC4520D1D63700864631 /* Main.storyboard in Resources */,
+				05881AB920D343220008AEC6 /* success.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0518DC5120D1D80000864631 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Mapbox.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Lottie.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0518DC3820D1D63700864631 /* Sources */ = {
@@ -282,6 +329,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GJZR2MEM28;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = LottieBox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +351,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GJZR2MEM28;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = LottieBox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
