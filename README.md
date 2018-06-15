@@ -1,4 +1,4 @@
-#LottieBox
+# LottieBox
 
 An experimental mashup illustrating how to use use [Lottie](https://github.com/airbnb/lottie-ios)-based views with Mapbox's [`MGLAnnotationView`](https://www.mapbox.com/ios-sdk/api/4.0.2/Classes/MGLAnnotationView.html#/MGLAnnotationView) class to provide custom animated markers on a map.
 
